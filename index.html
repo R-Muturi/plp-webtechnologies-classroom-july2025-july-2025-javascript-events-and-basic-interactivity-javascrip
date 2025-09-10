@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Web Pages 🚀</h1>
+    </header>
+
+    <main>
+        <section class="interactive-section">
+            <h2>🎉 Part 1: Event Handling</h2>
+            <div class="interactive-container">
+                <button id="message-btn">Show a Message</button>
+                <p id="message-text" class="hidden">Hello! You clicked the button. 👋</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="interactive-section">
+            <h2>🎮 Part 2: Interactive Elements</h2>
+            <div class="interactive-container">
+                <h3>Light/Dark Mode Toggle</h3>
+                <button id="mode-toggle">Toggle Dark Mode</button>
+            </div>
+
+            <div class="interactive-container">
+                <h3>Collapsible FAQ Section</h3>
+                <div class="faq-item">
+                    <h4 class="faq-question">What is JavaScript?</h4>
+                    <p class="faq-answer hidden">JavaScript is a programming language that enables interactive web pages.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">What is an event listener?</h4>
+                    <p class="faq-answer hidden">An event listener is a function in JavaScript that waits for a specific user action (like a click) to happen on an element.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="interactive-section">
+            <h2>📋✅ Part 3: Form Validation</h2>
+            <form id="registration-form" novalidate>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit">Register</button>
+                <p id="form-success-message" class="hidden success-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with JavaScript!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
